@@ -1,6 +1,6 @@
 
 .nav {
-    height: 5vh;
+    height: 6vh;
     top: 0;
     position: sticky;
     background-color: antiquewhite;
@@ -8,31 +8,64 @@
     padding-top: 1vh;
     max-width: 100%;
 }
-
+.menu div{
+    width: 5vh;
+    height: 3vh;
+    margin-left: 2vh;
+    padding-top: 0.2vh;
+}
+.nav .menu div span{
+    height: 0.6vh;
+    width: 3vh;
+    display: block;
+    border-bottom: 2.3px solid rgb(82, 94, 162);
+}
 .search{
     height: auto;
-    border: 2px transparent;
     position: fixed;
-    margin-left: 5vh;
+    display: flex;
     left: 10%;
 }
-.search img{
-    height: auto;
-    position: fixed;
-    margin-right: 1vh;
-    margin-top: 0.1vh;
-}
 .search input{
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     border: 0.1vh transparent;
     height: 4vh;
     max-width: 100%;
 }
-
+.searchimg{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 .account{
     position:fixed;
+    display: flex;
+    height: 6vh;
     right: 5vh;
     padding-top: 1vh;
     color: rgb(0, 0, 252);
     font-size: 1rem;
+}
+
+.account div img{
+    margin-right: 1vh;
+    cursor: pointer;
+}
+.login{
+    height: fit-content;
+    margin-top: 0.5vh;
+    cursor: pointer;
+}
+.menu:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:900px) {
+    .menu{
+        display: none;
+    }
 }
